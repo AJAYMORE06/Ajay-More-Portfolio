@@ -1,0 +1,176 @@
+$orangeFontColor: #FF5733;
+
+.paddingCommon {
+    padding-top: 80px;
+}
+
+.displayNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 30px;
+    background-color: #36454F;
+}
+
+a.active {
+    color: $orangeFontColor;
+}
+
+.orangeFontColor {
+    color: $orangeFontColor;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navItem {
+    padding: 10px 10px;
+    transition: transform 0.2s ease;
+}
+
+.navItem:hover {
+    backface-visibility: hidden;
+    transform: scale(1.02);
+}
+
+.imageSelfCondition {
+    display: none;
+}
+
+.imageSelfDefault {
+    height: 350px;
+    width: 350px;
+}
+
+.imageSelfCondition {
+    height: 350px;
+    width: 350px;
+}
+
+.imageContainer:hover .imageSelfDefault {
+    display: none;
+}
+
+.imageContainer:hover .imageSelfCondition {
+    display: block;
+}
+
+.sectionBody {
+    margin: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeInfo {
+    width: 750px;
+    margin: 50px 0px 0px 40px;
+}
+
+.commonContainer {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.skillsButton {
+    margin: 10px 10px 0px 0px;
+    font-size: 15px;
+    cursor: auto;
+    transition: transform 0.3s ease;
+}
+
+.skillsButton:hover {
+    transform: scale(1.1);
+}
+
+.imgSkill {
+    width: 22px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+.fontaboutIntro {
+    margin-left: 42%;
+    font-size: 20px;
+    color: $orangeFontColor;
+}
+
+.fontabout {
+    font-size: medium;
+    color: white;
+    width: 700px;
+    margin: 0px 40px;
+}
+
+@mixin fontHome {
+    color: white;
+    margin: 10px 0px;
+}
+
+.fontPrimary {
+    font-size: 20px;
+    @include fontHome();
+}
+
+.fontSecondary {
+    font-size: 40px;
+    @include fontHome();
+}
+
+.social-links {
+    font-size: 25px;
+    display: inline-block;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    line-height: 1;
+    margin: 20px 0px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a {
+    padding: 8px;
+
+    :hover {
+        color: $orangeFontColor;
+        transition: transform 0.3s ease;
+    }
+}
+
+.btn-secondary {
+    margin-top: -10px;
+    font-size: 12px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    color: $orangeFontColor !important;
+    transform: scale(1.1);
+}
+
+#typed-output {
+    font-size: 20px;
+    color: $orangeFontColor;
+}
+
+.typed-cursor {
+    font-size: 20px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.skillAnimation {
+    margin-left: 30%;
+    margin-top: 50px;
+}
