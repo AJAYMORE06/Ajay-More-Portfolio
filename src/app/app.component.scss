@@ -1,14 +1,10 @@
 $orangeFontColor: #FF5733;
 
-.paddingCommon {
-    padding-top: 80px;
-}
-
 .displayNav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: whitesmoke;
     top: 0px;
     z-index: 1;
     width: 100%;
@@ -24,7 +20,7 @@ a.active {
 }
 
 a.inactive {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -45,6 +41,7 @@ a.inactive {
 .imageSelfDefault {
     height: 350px;
     width: 350px;
+    float: inline-end;
 }
 
 .sectionBody {
@@ -54,14 +51,17 @@ a.inactive {
 }
 
 .homeInfo {
-    width: 750px;
+    // width: 750px;
     margin: 50px 0px 0px 40px;
+}
+
+.extraPadding {
+    padding-top: 170px !important;
 }
 
 .commonContainer {
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -71,12 +71,14 @@ a.inactive {
     font-size: 15px;
     cursor: auto;
     transition: transform 0.3s ease;
+    color: whitesmoke;
     background-color: #1c2428;
     opacity: 95%;
 }
 
 .skillsButton:hover {
     transform: scale(1.1);
+    color: $orangeFontColor;
 }
 
 .imgSkill {
@@ -85,21 +87,30 @@ a.inactive {
     padding-bottom: 3px;
 }
 
-.fontaboutIntro {
-    margin-left: 42%;
+.insideContainerIntro {
     font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
     color: $orangeFontColor;
 }
 
-.fontabout {
+.insideContainer {
     font-size: medium;
-    color: white;
+    color: whitesmoke;
+    width: 700px;
+    text-align: center;
+    margin: 0px 40px;
+}
+
+.insideContainerWithoutAlignment {
+    font-size: medium;
+    color: whitesmoke;
     width: 700px;
     margin: 0px 40px;
 }
 
 @mixin fontHome {
-    color: white;
+    color: whitesmoke;
     margin: 10px 0px;
 }
 
@@ -124,7 +135,7 @@ a.inactive {
 
 .social-links a {
     padding: 8px;
-    color: white;
+    color: whitesmoke;
 
     :hover {
         color: $orangeFontColor;
@@ -161,7 +172,7 @@ a.inactive {
 }
 
 .skillAnimation {
-    margin-left: 30%;
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -183,12 +194,20 @@ a.inactive {
 }
 
 .contactForm {
-    width: 500px;
     float: inline-end;
+    width: 64%;
+    padding-top: 25px;
+    text-align: left !important;
+}
+
+.contactFormFlexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contactMeEmail {
-    color: white;
+    color: whitesmoke;
 }
 
 .contactmeImage {
@@ -211,7 +230,9 @@ a.inactive {
 }
 
 .copyright {
-    margin: 80px 0px 0px 250px;
+    text-align: center;
+    padding-top: 70px;
+    color: grey;
 }
 
 .mainDiv {
@@ -224,8 +245,8 @@ a.inactive {
 
 .card {
     background-color: #1c2428;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
     opacity: 95%;
 }
 

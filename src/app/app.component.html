@@ -15,12 +15,12 @@
     </nav>
 </div>
 <div class="sectionClass">
-    <section #sections id="home" class="paddingCommon" [@fadeInUp]>
-        <div class="sectionBody">
-            <div class="imageContainer">
+    <section #sections id="home" class="commonContainer extraPadding" [@fadeInUp]>
+        <div class="insideContainer">
+            <div>
                 <img class="imageSelfDefault" src="assets/self.webp" alt="Avatar">
             </div>
-            <div class="homeInfo">
+            <div>
                 <p class="fontPrimary">Hi there 👋 I'm</p>
                 <p class="fontSecondary"><b>Ajay More</b></p>
                 <p class="fontPrimary">Thanks for dropping by! I’m a <b class="orangeFontColor">software
@@ -29,6 +29,8 @@
                     with a modern web development stack, always eager to optimize, experiment, and push the limits
                     of
                     code.</p>
+            </div>
+            <div>
                 <a href="#contact"><button class="btn btn-secondary">Contact me</button></a>
 
                 <a href="assets/Resume-Ajay-Updated.pdf" download>
@@ -43,8 +45,8 @@
         </div>
     </section>
     <section #sections id="about" class="commonContainer" [@fadeInUp]>
-        <div class="fontabout">
-            <div class="fontaboutIntro">This is me!</div>
+        <div class="insideContainer">
+            <div class="insideContainerIntro">This is me!</div>
             I’m a software developer with 8 years of experience, currently working as a Lead Engineer in Pune.
             I primarily wrangle the frontend of applications and have worked across cybersecurity, e-commerce, and
             CSP
@@ -78,189 +80,185 @@
     <section *ngIf="false" #sections id="project" class="commonContainer" [@fadeInUp]>
     </section>
     <section #sections id="career" class="commonContainer" [@fadeInUp]>
-        <div class="fontabout">
-            <div class="fontaboutIntro">My Experiences!</div>
-            <div class="experienceFormat">
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btnAccordion orangeFontColor accordion-button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Nitor Infotech
-                                </button>
-                            </h5>
-                        </div>
+        <div class="insideContainerWithoutAlignment">
+            <div class="insideContainerIntro">My Experiences</div>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btnAccordion orangeFontColor accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Nitor Infotech
+                            </button>
+                        </h5>
+                    </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordion">
-                            <div class="card-body">
-                                <div class="orangeFontColor">Lead Engineer (02/2025 - Present)</div>
-                                <li class="paddingBetweenBulletPoints">Architected and developed the frontend of
-                                    Angular-based
-                                    web applications, leveraging AI and
-                                    ML capabilities to enhance data processing and real-time analytics. Built
-                                    interactive,
-                                    high-performance UI components using Angular 18, TypeScript, and JavaScript,
-                                    ensuring
-                                    responsiveness and seamless user experiences.</li>
-                                <li class="paddingBetweenBulletPoints">Led the frontend integration of a CSP
-                                    micro-frontend
-                                    application, collaborating with
-                                    cross-functional teams to incorporate Azure microservices (User Directory,
-                                    Devices,
-                                    Microsoft Teams, and Exchange Online). Implemented AI-driven insights to enhance
-                                    automation
-                                    and decision-making within the UI.</li>
-                                <li class="paddingBetweenBulletPoints">Designed and optimized scalable, reusable,
-                                    and
-                                    high-performance frontend code tailored for
-                                    cloud-native AI/ML workloads.</li>
-                                <li class="paddingBetweenBulletPoints">Enhanced data visualization and analytics by
-                                    integrating
-                                    the Angular Material library,
-                                    enabling efficient handling of large datasets and AI-powered insights.</li>
-                                <li class="paddingBetweenBulletPoints">Developed AI-enhanced search and filtering
-                                    for a
-                                    application management using Angular 18 and
-                                    NgRx, improving content discoverability and user engagement.</li>
-                                <li class="paddingBetweenBulletPoints">Served as a Scrum Master, facilitating agile
-                                    ceremonies
-                                    including sprint planning, daily
-                                    stand-ups, and retrospectives, ensuring smooth collaboration across development
-                                    teams.</li>
-                                <li class="paddingBetweenBulletPoints">Mentored junior developers, providing
-                                    guidance on
-                                    frontend best practices, performance
-                                    optimization, and AI/ML-driven UI development, fostering technical growth and
-                                    code
-                                    excellence.</li>
-                            </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <div class="orangeFontColor">Lead Engineer (02/2025 - Present)</div>
+                            <li class="paddingBetweenBulletPoints">Architected and developed the frontend of
+                                Angular-based
+                                web applications, leveraging AI and
+                                ML capabilities to enhance data processing and real-time analytics. Built
+                                interactive,
+                                high-performance UI components using Angular 18, TypeScript, and JavaScript,
+                                ensuring
+                                responsiveness and seamless user experiences.</li>
+                            <li class="paddingBetweenBulletPoints">Led the frontend integration of a CSP
+                                micro-frontend
+                                application, collaborating with
+                                cross-functional teams to incorporate Azure microservices (User Directory,
+                                Devices,
+                                Microsoft Teams, and Exchange Online). Implemented AI-driven insights to enhance
+                                automation
+                                and decision-making within the UI.</li>
+                            <li class="paddingBetweenBulletPoints">Designed and optimized scalable, reusable,
+                                and
+                                high-performance frontend code tailored for
+                                cloud-native AI/ML workloads.</li>
+                            <li class="paddingBetweenBulletPoints">Enhanced data visualization and analytics by
+                                integrating
+                                the Angular Material library,
+                                enabling efficient handling of large datasets and AI-powered insights.</li>
+                            <li class="paddingBetweenBulletPoints">Developed AI-enhanced search and filtering
+                                for a
+                                application management using Angular 18 and
+                                NgRx, improving content discoverability and user engagement.</li>
+                            <li class="paddingBetweenBulletPoints">Served as a Scrum Master, facilitating agile
+                                ceremonies
+                                including sprint planning, daily
+                                stand-ups, and retrospectives, ensuring smooth collaboration across development
+                                teams.</li>
+                            <li class="paddingBetweenBulletPoints">Mentored junior developers, providing
+                                guidance on
+                                frontend best practices, performance
+                                optimization, and AI/ML-driven UI development, fostering technical growth and
+                                code
+                                excellence.</li>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btnAccordion collapsed orangeFontColor accordion-button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    Eastern Enterprise
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                            <div class="card-body">
-                                <div class="orangeFontColor">Senior Software Developer (10/2021 - 12/2024)</div>
-                                <li class="paddingBetweenBulletPoints">Developed the frontend of Angular-based web
-                                    applications leveraging AI and ML capabilities. Utilized Angular 17, TypeScript,
-                                    and
-                                    JavaScript to build interactive UI components, ensuring a responsive and
-                                    user-friendly experience. Integrated ML models to enhance data processing and
-                                    enable
-                                    real-time analytics.</li>
-                                <li class="paddingBetweenBulletPoints">Contributed to a CSP micro-frontend
-                                    application,
-                                    seamlessly integrating Azure microservices such as user directory, devices,
-                                    Microsoft Teams, and Exchange Online. Implemented AI-driven insights within the
-                                    UI
-                                    to improve decision-making and automation. Designed and maintained reusable,
-                                    scalable, and high-performance code optimized for cloud environments and AI/ML
-                                    workloads.</li>
-                                <li class="paddingBetweenBulletPoints">Integrated the DevExtreme library to enhance
-                                    data
-                                    visualization, enabling efficient handling of large datasets and AI-powered
-                                    analytics.</li>
-                                <li class="paddingBetweenBulletPoints">Developed and executed unit and end-to-end
-                                    tests
-                                    using Playwright to ensure
-                                    application stability, particularly for AI-enhanced features and data pipelines.
-                                </li>
-                                <li class="paddingBetweenBulletPoints">Identified and resolved performance
-                                    bottlenecks,
-                                    optimized API interactions, and
-                                    deployed code globally using Jenkins CI/CD pipelines. Built and optimized data
-                                    pipelines to ensure robustness, scalability, and AI-driven insights for improved
-                                    decision-making.</li>
-                                <li class="paddingBetweenBulletPoints">Worked on a collection management and online
-                                    representation project using Angular 9,
-                                    TypeScript, and NgRx, incorporating AI-powered search, filtering, and
-                                    recommendations to enhance user experience.</li>
-                                <li class="paddingBetweenBulletPoints">Actively participated in agile ceremonies,
-                                    serving as a Scrum Master to facilitate
-                                    sprint planning, daily stand-ups, and code reviews, ensuring seamless
-                                    collaboration
-                                    and efficient development cycles.</li>
-                                <li class="paddingBetweenBulletPoints">Mentored junior developers, providing
-                                    guidance on
-                                    frontend best practices,
-                                    performance optimization, and AI/ML integration within web applications.</li>
-                            </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btnAccordion collapsed orangeFontColor accordion-button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Eastern Enterprise
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <div class="orangeFontColor">Senior Software Developer (10/2021 - 12/2024)</div>
+                            <li class="paddingBetweenBulletPoints">Developed the frontend of Angular-based web
+                                applications leveraging AI and ML capabilities. Utilized Angular 17, TypeScript,
+                                and
+                                JavaScript to build interactive UI components, ensuring a responsive and
+                                user-friendly experience. Integrated ML models to enhance data processing and
+                                enable
+                                real-time analytics.</li>
+                            <li class="paddingBetweenBulletPoints">Contributed to a CSP micro-frontend
+                                application,
+                                seamlessly integrating Azure microservices such as user directory, devices,
+                                Microsoft Teams, and Exchange Online. Implemented AI-driven insights within the
+                                UI
+                                to improve decision-making and automation. Designed and maintained reusable,
+                                scalable, and high-performance code optimized for cloud environments and AI/ML
+                                workloads.</li>
+                            <li class="paddingBetweenBulletPoints">Integrated the DevExtreme library to enhance
+                                data
+                                visualization, enabling efficient handling of large datasets and AI-powered
+                                analytics.</li>
+                            <li class="paddingBetweenBulletPoints">Developed and executed unit and end-to-end
+                                tests
+                                using Playwright to ensure
+                                application stability, particularly for AI-enhanced features and data pipelines.
+                            </li>
+                            <li class="paddingBetweenBulletPoints">Identified and resolved performance
+                                bottlenecks,
+                                optimized API interactions, and
+                                deployed code globally using Jenkins CI/CD pipelines. Built and optimized data
+                                pipelines to ensure robustness, scalability, and AI-driven insights for improved
+                                decision-making.</li>
+                            <li class="paddingBetweenBulletPoints">Worked on a collection management and online
+                                representation project using Angular 9,
+                                TypeScript, and NgRx, incorporating AI-powered search, filtering, and
+                                recommendations to enhance user experience.</li>
+                            <li class="paddingBetweenBulletPoints">Actively participated in agile ceremonies,
+                                serving as a Scrum Master to facilitate
+                                sprint planning, daily stand-ups, and code reviews, ensuring seamless
+                                collaboration
+                                and efficient development cycles.</li>
+                            <li class="paddingBetweenBulletPoints">Mentored junior developers, providing
+                                guidance on
+                                frontend best practices,
+                                performance optimization, and AI/ML integration within web applications.</li>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btnAccordion collapsed orangeFontColor accordion-button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    Infosys Ltd
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordion">
-                            <div class="card-body">
-                                <div class="orangeFontColor">Senior Systems Engineer (01/2019 - 10/2021)</div>
-                                <li class="paddingBetweenBulletPoints">Contributed to a micro-frontend application
-                                    using
-                                    Angular 11, TypeScript, and JavaScript, focusing on listing offenses and
-                                    incidents
-                                    data while developing key functionalities to enhance user interaction and data
-                                    management.</li>
-                                <li class="paddingBetweenBulletPoints">Designed and implemented a seamless user
-                                    interface with efficient data presentation,
-                                    including reactive forms for user inputs to add incidents and offenses.
-                                    Developed a
-                                    dashboard to display real-time data counts across different screens.</li>
-                                <li class="paddingBetweenBulletPoints">Collaborated closely with clients to
-                                    understand
-                                    requirements and enhance user-facing
-                                    features, ensuring smooth UI upgrades when new changes were introduced.</li>
-                                <li class="paddingBetweenBulletPoints">Worked in a multidisciplinary team alongside
-                                    back-end developers and web designers,
-                                    ensuring seamless integration and optimal application performance. Conducted
-                                    end-to-end and integration testing to maintain code quality and stability.</li>
-                                <li class="paddingBetweenBulletPoints">Managed global code deployment using Jenkins
-                                    CI/CD pipelines, optimizing release
-                                    cycles for smooth and efficient updates.</li>
-                            </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btnAccordion collapsed orangeFontColor accordion-button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Infosys Ltd
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <div class="orangeFontColor">Senior Systems Engineer (01/2019 - 10/2021)</div>
+                            <li class="paddingBetweenBulletPoints">Contributed to a micro-frontend application
+                                using
+                                Angular 11, TypeScript, and JavaScript, focusing on listing offenses and
+                                incidents
+                                data while developing key functionalities to enhance user interaction and data
+                                management.</li>
+                            <li class="paddingBetweenBulletPoints">Designed and implemented a seamless user
+                                interface with efficient data presentation,
+                                including reactive forms for user inputs to add incidents and offenses.
+                                Developed a
+                                dashboard to display real-time data counts across different screens.</li>
+                            <li class="paddingBetweenBulletPoints">Collaborated closely with clients to
+                                understand
+                                requirements and enhance user-facing
+                                features, ensuring smooth UI upgrades when new changes were introduced.</li>
+                            <li class="paddingBetweenBulletPoints">Worked in a multidisciplinary team alongside
+                                back-end developers and web designers,
+                                ensuring seamless integration and optimal application performance. Conducted
+                                end-to-end and integration testing to maintain code quality and stability.</li>
+                            <li class="paddingBetweenBulletPoints">Managed global code deployment using Jenkins
+                                CI/CD pipelines, optimizing release
+                                cycles for smooth and efficient updates.</li>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btnAccordion collapsed orangeFontColor accordion-button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    Upturn Precision Industries
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordion">
-                            <div class="card-body">
-                                <div class="orangeFontColor">Software Developer (07/2017 - 12/2018)</div>
-                                <li class="paddingBetweenBulletPoints">Ensured user interface performance and
-                                    technical
-                                    feasibility of UI/UX designs with Angular 5 with TypeScript and JavaScript
-                                    concepts
-                                    while understanding client needs.</li>
-                                <li class="paddingBetweenBulletPoints">Collaborated closely with multidisciplinary
-                                    team,
-                                    including back-end developers and web designers. Conducted full-spectrum tests
-                                    for
-                                    code assurance.</li>
-                            </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btnAccordion collapsed orangeFontColor accordion-button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Upturn Precision Industries
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <div class="orangeFontColor">Software Developer (07/2017 - 12/2018)</div>
+                            <li class="paddingBetweenBulletPoints">Ensured user interface performance and
+                                technical
+                                feasibility of UI/UX designs with Angular 5 with TypeScript and JavaScript
+                                concepts
+                                while understanding client needs.</li>
+                            <li class="paddingBetweenBulletPoints">Collaborated closely with multidisciplinary
+                                team,
+                                including back-end developers and web designers. Conducted full-spectrum tests
+                                for
+                                code assurance.</li>
                         </div>
                     </div>
                 </div>
@@ -268,62 +266,63 @@
         </div>
     </section>
     <section #sections id="skills" class="commonContainer" [@fadeInUp]>
-        <div class="fontabout">
-            <div class="fontaboutIntro">Skills</div>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Angular.png"
-                    alt="Angular">Angular</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/React.png"
-                    alt="React">React</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill"
-                    src="assets/TypeScript.png" alt="TypeScript">TypeScript</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill"
-                    src="assets/JavaScript.png" alt="JavaScript">JavaScript</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Python.png"
-                    alt="Python">Python</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Node.js.png"
-                    alt="NodeJs">NodeJs</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Express.png"
-                    alt="ExpressJS">ExpressJS</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/HTML5.png"
-                    alt="HTML5">HTML5</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/CSS3.png"
-                    alt="CSS3">CSS3</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill"
-                    src="assets/Tailwind CSS.png" alt="Tailwind">Tailwind</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill"
-                    src="assets/Playwrite.png" alt="Playwrite">Playwrite</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Jasmine.png"
-                    alt="Jasmine">Jasmine</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Karma.png"
-                    alt="Karma">Karma</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Jenkins.png"
-                    alt="Jenkins">Jenkins</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/MySQL.png"
-                    alt="MySQL">MySQL</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/MongoDB.png"
-                    alt="MongoDB">MongoDB</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Azure.png"
-                    alt="Azure">Azure</button>
-            <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/GitHub.png"
-                    alt="GitHub">GitHub</button>
+        <div class="insideContainer">
+            <div class="insideContainerIntro">Skills</div>
+            <div class="insideContainerAlignment">
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Angular.png"
+                        alt="Angular">Angular</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/React.png"
+                        alt="React">React</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/TypeScript.png"
+                        alt="TypeScript">TypeScript</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/JavaScript.png"
+                        alt="JavaScript">JavaScript</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Python.png"
+                        alt="Python">Python</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Node.js.png"
+                        alt="NodeJs">NodeJs</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Express.png"
+                        alt="ExpressJS">ExpressJS</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/HTML5.png"
+                        alt="HTML5">HTML5</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/CSS3.png"
+                        alt="CSS3">CSS3</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Tailwind CSS.png"
+                        alt="Tailwind">Tailwind</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Playwrite.png"
+                        alt="Playwrite">Playwrite</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Jasmine.png"
+                        alt="Jasmine">Jasmine</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Karma.png"
+                        alt="Karma">Karma</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Jenkins.png"
+                        alt="Jenkins">Jenkins</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/MySQL.png"
+                        alt="MySQL">MySQL</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/MongoDB.png"
+                        alt="MongoDB">MongoDB</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Azure.png"
+                        alt="Azure">Azure</button>
+                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/GitHub.png"
+                        alt="GitHub">GitHub</button>
+            </div>
             <div class="skillAnimation">I am a &nbsp;<span id="typed-output"></span>
             </div>
         </div>
     </section>
     <section #sections id="contact" class="commonContainer" [@fadeInUp]>
-        <div class="fontabout">
-            <div class="fontaboutIntro">Let's Connect</div>
-            <div class="experienceFormat">
-                <p>Feel free to reach out via <a class="contactMeEmail" href="mailto:more.ajay6995@gmail.com"
-                        target="_blank">email</a> or drop me a message, and I’ll get back to you as soon as
-                    possible.
-                </p>
+        <div class="insideContainer">
+            <div class="insideContainerIntro">Let's Connect</div>
+            <p>Feel free to reach out via <a class="contactMeEmail" href="mailto:more.ajay6995@gmail.com"
+                    target="_blank">email</a> or drop me a message, and I’ll get back to you as soon as
+                possible.
+            </p>
+            <div class="contactFormFlexContainer">
                 <img src="assets/myPic.jpg" class="contactmeImage">
                 <form [formGroup]="contactForm" class="contactForm" (ngSubmit)="onSubmit()">
                     <div class="form-group paddingForm">
-                        <label for="email">Email Address</label>
                         <input type="email" id="email" class="form-control" formControlName="email"
-                            placeholder="Enter your email"
+                            placeholder="Your email"
                             [ngClass]="{'invalid-field': contactForm.get('email')?.errors && contactForm.get('email')?.dirty}">
                         <small *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.dirty"
                             class="error">
@@ -335,7 +334,6 @@
                     </div>
 
                     <div class="form-group paddingForm">
-                        <label for="message">Message</label>
                         <textarea id="message" class="form-control" formControlName="message" rows="4"
                             placeholder="Your message..."
                             [ngClass]="{'invalid-field': contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.dirty}"></textarea>
@@ -353,7 +351,7 @@
                     </button>
                 </form>
             </div>
-            <div class="copyright"><small class="rightReserved">© All Rights Reserved</small>
+            <div class="copyright"><small>© All Rights Reserved</small>
             </div>
         </div>
     </section>
