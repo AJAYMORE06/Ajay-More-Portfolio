@@ -10,6 +10,7 @@ $orangeFontColor: #FF5733;
     align-items: center;
     color: white;
     top: 0px;
+    z-index: 1;
     width: 100%;
     position: fixed;
     padding-bottom: 30px;
@@ -18,15 +19,16 @@ $orangeFontColor: #FF5733;
 
 a.active {
     color: $orangeFontColor;
+    text-decoration: none;
+}
+
+a.inactive {
+    color: white;
+    text-decoration: none;
 }
 
 .orangeFontColor {
     color: $orangeFontColor;
-}
-
-a {
-    color: white;
-    text-decoration: none;
 }
 
 .navItem {
@@ -76,7 +78,9 @@ a {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 80px;
 }
 
 .skillsButton {
@@ -135,6 +139,7 @@ a {
 
 .social-links a {
     padding: 8px;
+    color: white;
 
     :hover {
         color: $orangeFontColor;
@@ -173,4 +178,61 @@ a {
 .skillAnimation {
     margin-left: 30%;
     margin-top: 50px;
+}
+
+.experienceFormat {
+    padding-top: 20px;
+}
+
+.paddingBetweenBulletPoints {
+    padding: 5px 0px;
+}
+
+.sendMessage {
+    margin-top: 10px;
+    width: 125px;
+}
+
+.paddingForm {
+    padding-top: 10px;
+}
+
+.contactForm {
+    width: 500px;
+    float: inline-end;
+}
+
+.contactMeEmail {
+    color: white;
+}
+
+.contactmeImage {
+    width: 150px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.btnAccordion:hover {
+    transform: scale(1.02);
+}
+
+.invalid-field {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    background-color: #ffe6e6;
+}
+
+.sectionClass {
+    height: 50%;
+}
+
+.copyright {
+    margin: 80px 0px 0px 250px;
+}
+
+.mainDiv {
+    display: block;
+}
+
+.rightReserved {
+    padding-left: 45px;
 }
