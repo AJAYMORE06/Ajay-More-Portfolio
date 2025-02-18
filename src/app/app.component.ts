@@ -2,15 +2,24 @@ import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Typed from 'typed.js';
 import emailjs from '@emailjs/browser';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('fadeInUp', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(50px)' }),
+        animate('0.6s ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+      ])
+    ])
+  ]
 })
 export class AppComponent implements OnInit {
   public title = 'portfolio';
-  public activeLink = 'home';
+  public activeLink = '';
   public isLoading = false;
   @ViewChildren('sections') sections!: QueryList<any>;
   contactForm: FormGroup;
@@ -70,7 +79,6 @@ export class AppComponent implements OnInit {
             currentSection = section.nativeElement.getAttribute('id');
           }
         });
-
         this.activeLink = currentSection;
       };
     };

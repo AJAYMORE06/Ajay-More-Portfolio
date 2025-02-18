@@ -15,11 +15,10 @@
     </nav>
 </div>
 <div class="sectionClass">
-    <section #sections id="home" class="paddingCommon">
+    <section #sections id="home" class="paddingCommon" [@fadeInUp]>
         <div class="sectionBody">
             <div class="imageContainer">
                 <img class="imageSelfDefault" src="assets/self.webp" alt="Avatar">
-                <img class="imageSelfCondition" src="assets/hi.webp" alt="hiAvatar">
             </div>
             <div class="homeInfo">
                 <p class="fontPrimary">Hi there 👋 I'm</p>
@@ -43,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section #sections id="about" class="commonContainer">
+    <section #sections id="about" class="commonContainer" [@fadeInUp]>
         <div class="fontabout">
             <div class="fontaboutIntro">This is me!</div>
             I’m a software developer with 8 years of experience, currently working as a Lead Engineer in Pune.
@@ -76,9 +75,9 @@
             games. Oh, and I do pick up a book... once in a blue moon (mostly to prove I can still read).
         </div>
     </section>
-    <section *ngIf="false" #sections id="project" class="commonContainer">
+    <section *ngIf="false" #sections id="project" class="commonContainer" [@fadeInUp]>
     </section>
-    <section #sections id="career" class="commonContainer">
+    <section #sections id="career" class="commonContainer" [@fadeInUp]>
         <div class="fontabout">
             <div class="fontaboutIntro">My Experiences!</div>
             <div class="experienceFormat">
@@ -268,7 +267,7 @@
             </div>
         </div>
     </section>
-    <section #sections id="skills" class="commonContainer">
+    <section #sections id="skills" class="commonContainer" [@fadeInUp]>
         <div class="fontabout">
             <div class="fontaboutIntro">Skills</div>
             <button class="btn btn-light skillsButton orangeFontColor"><img class="imgSkill" src="assets/Angular.png"
@@ -311,7 +310,7 @@
             </div>
         </div>
     </section>
-    <section #sections id="contact" class="commonContainer">
+    <section #sections id="contact" class="commonContainer" [@fadeInUp]>
         <div class="fontabout">
             <div class="fontaboutIntro">Let's Connect</div>
             <div class="experienceFormat">
@@ -355,7 +354,6 @@
                 </form>
             </div>
             <div class="copyright"><small class="rightReserved">© All Rights Reserved</small>
-                <div><small>Designed and developed by Ajay More</small></div>
             </div>
         </div>
     </section>

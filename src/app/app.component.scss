@@ -13,8 +13,9 @@ $orangeFontColor: #FF5733;
     z-index: 1;
     width: 100%;
     position: fixed;
-    padding-bottom: 30px;
-    background-color: #36454F;
+    padding: 12px 0px;
+    background-color: #1c2428;
+    opacity: 96%;
 }
 
 a.active {
@@ -41,26 +42,9 @@ a.inactive {
     transform: scale(1.02);
 }
 
-.imageSelfCondition {
-    display: none;
-}
-
 .imageSelfDefault {
     height: 350px;
     width: 350px;
-}
-
-.imageSelfCondition {
-    height: 350px;
-    width: 350px;
-}
-
-.imageContainer:hover .imageSelfDefault {
-    display: none;
-}
-
-.imageContainer:hover .imageSelfCondition {
-    display: block;
 }
 
 .sectionBody {
@@ -80,7 +64,6 @@ a.inactive {
     flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin: 80px;
 }
 
 .skillsButton {
@@ -88,6 +71,8 @@ a.inactive {
     font-size: 15px;
     cursor: auto;
     transition: transform 0.3s ease;
+    background-color: #1c2428;
+    opacity: 95%;
 }
 
 .skillsButton:hover {
@@ -235,4 +220,21 @@ a.inactive {
 
 .rightReserved {
     padding-left: 45px;
+}
+
+.card {
+    background-color: #1c2428;
+    border: 1px solid white;
+    color: white;
+    opacity: 95%;
+}
+
+.section {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section.ng-animating {
+    opacity: 1;
+    visibility: visible;
 }

@@ -4,7 +4,10 @@
 
 body {
     margin: 0px !important;
-    height: 100vh;
-    background-color: #36454F;
+    background-color: #2a3439;
     font-family: sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
