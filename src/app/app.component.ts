@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
           const target = document.getElementById(targetId);
           if (target) {
             (this as HTMLElement).blur();
-            const headerOffset = 160; // Adjust this value based on your header height
+            const headerOffset = 250; // Adjust this value based on your header height
             const elementPosition = target.getBoundingClientRect().top + window.scrollY;
             const offsetPosition = elementPosition - headerOffset;
 
