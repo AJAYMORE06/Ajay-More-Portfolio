@@ -20,11 +20,13 @@ import { animate, style, transition, trigger } from '@angular/animations';
 export class AppComponent implements OnInit {
   public title = 'portfolio';
   public activeLink = '';
+  public isDarkMode = false;
   public isLoading = false;
   @ViewChildren('sections') sections!: QueryList<any>;
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
+    history.scrollRestoration = "manual";
     this.contactForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
@@ -32,6 +34,13 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    const storedTheme = sessionStorage.getItem('isDarkMode');
+    if (storedTheme !== null) {
+      this.isDarkMode = JSON.parse(storedTheme);
+    } else {
+      this.isDarkMode = true;
+    }
+    document.documentElement.setAttribute('data-theme', this.isDarkMode ? 'dark' : 'light');
     const options = {
       strings: ["Software Developer", "Frontend Developer", "JavaScript Developer", "MEAN Stack Developer", "MERN Stack Developer", "Playwright Developer"],
       typeSpeed: 100,
@@ -69,6 +78,12 @@ export class AppComponent implements OnInit {
         }
       });
     });
+  }
+
+  toggleTheme() {
+    this.isDarkMode = !this.isDarkMode;
+    document.documentElement.setAttribute('data-theme', this.isDarkMode ? 'dark' : 'light');
+    sessionStorage.setItem('isDarkMode', JSON.stringify(this.isDarkMode));
   }
 
   ngAfterViewInit(): void {

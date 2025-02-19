@@ -351,8 +351,9 @@
                     </button>
                 </form>
             </div>
-            <div class="copyright"><small>© All Rights Reserved</small>
-            </div>
+            <div class="copyright"><small>© 2025 Ajay. All rights reserved.</small></div>
         </div>
     </section>
+    <div *ngIf="isDarkMode" (click)="toggleTheme()"><i class="bi bi-brightness-high fixed-icon"></i></div>
+    <div *ngIf="!isDarkMode" (click)="toggleTheme()"><i class="bi bi-moon fixed-icon"></i></div>
 </div>
