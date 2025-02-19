@@ -18,7 +18,6 @@ import { animate, style, transition, trigger } from '@angular/animations';
   ]
 })
 export class AppComponent implements OnInit {
-  public title = 'portfolio';
   public activeLink = '';
   public isDarkMode = false;
   public isLoading = false;
@@ -41,6 +40,7 @@ export class AppComponent implements OnInit {
       this.isDarkMode = true;
     }
     document.documentElement.setAttribute('data-theme', this.isDarkMode ? 'dark' : 'light');
+    this.activeLink = 'home';
     const options = {
       strings: ["Software Developer", "Frontend Developer", "JavaScript Developer", "MEAN Stack Developer", "MERN Stack Developer", "Playwright Developer"],
       typeSpeed: 100,
