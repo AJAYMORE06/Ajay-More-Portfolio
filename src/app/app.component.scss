@@ -44,17 +44,6 @@ a.inactive {
     float: inline-end;
 }
 
-.sectionBody {
-    margin: 80px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.homeInfo {
-    // width: 750px;
-    margin: 50px 0px 0px 40px;
-}
-
 .extraPadding {
     padding-top: 170px !important;
 }
@@ -233,14 +222,6 @@ a.inactive {
     text-align: center;
     padding-top: 70px;
     color: grey;
-}
-
-.mainDiv {
-    display: block;
-}
-
-.rightReserved {
-    padding-left: 45px;
 }
 
 .card {
