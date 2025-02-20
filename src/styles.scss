@@ -57,6 +57,11 @@ a.active {
     text-decoration: none;
 }
 
+a.active:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
 a.inactive {
     color: var(--inactive-text-color);
     text-decoration: none;
@@ -285,6 +290,10 @@ a.inactive {
     .contactForm {
         width: 90%;
     }
+
+    .carouselContextheight {
+        height: 445px !important;
+    }
 }
 
 .fixed-icon {
@@ -305,4 +314,13 @@ a.inactive {
 
 .fixed-icon:hover {
     color: var(--highlight-color);
+}
+
+.carousalLearnMore {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.carouselContextheight {
+    height: 235px;
 }

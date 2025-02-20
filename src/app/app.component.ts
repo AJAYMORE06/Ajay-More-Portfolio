@@ -107,7 +107,6 @@ export class AppComponent implements OnInit {
   }
 
   setActiveLink(linkActive: string) {
-    console.log(linkActive)
     this.activeLink = linkActive;
   }
 
