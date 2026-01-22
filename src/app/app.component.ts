@@ -113,7 +113,7 @@ export class AppComponent implements OnInit {
   onSubmit() {
     if (this.contactForm.valid) {
       this.isLoading = true;
-      emailjs.send('more.ajay6995', 'template_zip9bs8', this.contactForm.value, 'uY4gXyME1PD6k7mPC')
+      emailjs.send('moreajay06', 'template_zip9bs8', this.contactForm.value, 'XoDGQZxVee7SckdWE')
         .then((response: any) => {
           this.isLoading = false;
           alert('Message sent successfully!');
